@@ -106,9 +106,9 @@ on SetComputerName()
 	set cmd to cmd & systemsetup & " -setlocalsubnetname \"" & ComputerName & "\" && "
 	set cmd to cmd & systemsetup & " -setcomputername \"" & ComputerName & "\" ; "
 	
-	my DisplayInfoMsg(cmd)
+	-- my DisplayInfoMsg(cmd)
 	
-	-- do shell script cmd with administrator privileges
+	do shell script cmd with administrator privileges
 	
 end SetComputerName
 
